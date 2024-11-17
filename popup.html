@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>广告拦截插件</title>
+  <style>
+    body {
+      width: 300px;
+      height: 200px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5; /* 添加背景色 */
+      color: #333; /* 文本颜色 */
+      border-radius: 5px; /* 边框圆角 */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    }
+
+    h2 {
+      color: #007bff; /* 标题颜色 */
+      text-align: center; /* 标题居中 */
+      margin-bottom: 15px; /* 下边距 */
+    }
+
+    p {
+      line-height: 1.5; /* 行高 */
+      margin-bottom: 10px; /* 下边距 */
+    }
+
+    button {
+      width: 100%; /* 按钮宽度 */
+      padding: 8px; /* 内边距 */
+      background-color: #007bff; /* 背景色 */
+      color: white; /* 文本颜色 */
+      border: none; /* 无边框 */
+      border-radius: 4px; /* 边框圆角 */
+      cursor: pointer; /* 鼠标悬停效果 */
+      transition: background-color 0.3s ease; /* 背景色过渡效果 */
+    }
+
+    button:hover {
+      background-color: #0056b3; /* 鼠标悬停时的背景色 */
+    }
+  </style>
+</head>
+<body>
+  <h2>广告拦截插件</h2>
+  <p>右键可以实现自定义屏蔽所选择的内容</p>
+  <button id="resetButton">刷新</button>
+  <script src="popup.js"></script>
+</body>
+</html>
