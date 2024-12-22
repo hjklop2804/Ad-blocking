@@ -2,7 +2,7 @@
 const MENU_ITEM_ID = "hideElement";
 const ACTION_HIDE_ELEMENT = "hideElement";
 
-// 当扩展安装时，创建上下文菜单
+// 当扩展安装时，上下文菜单
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
     id: MENU_ITEM_ID,
@@ -11,7 +11,7 @@ chrome.runtime.onInstalled.addListener(() => {
   });
 });
 
-// 当上下文菜单被点击时，发送消息给当前标签页
+// 当上下文菜单被点击时，发送消息给标签页
 chrome.contextMenus.onClicked.addListener((info, tab) => {
   if (info.menuItemId === MENU_ITEM_ID) {
     chrome.tabs.sendMessage(tab.id, { action: ACTION_HIDE_ELEMENT });
