@@ -13,7 +13,10 @@ function isAdElement(element) {
   return false;
 }//定义函数判断元素是否为广告元素
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 08e31a299be7bf5dad747a0db3d002dd2d2fdedf
 document.addEventListener('contextmenu', (event) => {
   lastRightClickedElement = event.target;
 }, true);
@@ -35,7 +38,10 @@ document.addEventListener('contextmenu', (event) => {
   }
   event.preventDefault();
 }, true);//将事件监听器设置为仅当右键点击的元素是广告元素时才记录该元素
+<<<<<<< HEAD
 
+=======
+>>>>>>> 08e31a299be7bf5dad747a0db3d002dd2d2fdedf
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === "hideElement" && lastRightClickedElement) {
@@ -56,4 +62,8 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     });
     hiddenElements = [];
 }
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 08e31a299be7bf5dad747a0db3d002dd2d2fdedf

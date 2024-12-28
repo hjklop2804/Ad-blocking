@@ -5,7 +5,10 @@ const MENU_ITEM_ID_BLOCK_SAME_TYPE = "blockSameTypeAd";
 const ACTION_BLOCK_SAME_TYPE = "blockSameTypeAd";
 const MENU_ITEM_ID_VIEW_STATS = "viewAdBlockingStats";
 const ACTION_VIEW_STATS = "viewAdBlockingStats";
+<<<<<<< HEAD
 
+=======
+>>>>>>> 08e31a299be7bf5dad747a0db3d002dd2d2fdedf
 // 当扩展安装时，上下文菜单
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
@@ -38,7 +41,10 @@ chrome.contextMenus.create({
     title: "查看广告拦截统计",
     tooltip: "查看插件拦截广告的相关统计信息",
     contexts: ["all"]
+<<<<<<< HEAD
 
+=======
+>>>>>>> 08e31a299be7bf5dad747a0db3d002dd2d2fdedf
 });//为每个菜单选项添加提示文字，使用户清楚每个选项的功能
 });
 
@@ -68,3 +74,7 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
       chrome.tabs.sendMessage(tab.id, { action: ACTION_BLOCK_SAME_TYPE });
   }
 });//为右键菜单添加一键屏蔽具有相同特征的所有广告
+<<<<<<< HEAD
+=======
+
+>>>>>>> 08e31a299be7bf5dad747a0db3d002dd2d2fdedf
